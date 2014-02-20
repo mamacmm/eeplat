@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 不序列化数据到磁盘  具体的缓存数量要根据负载优化  最近最少清除策略，100分钟的过期时间-->
+<ehcache>
+   <defaultCache
+      	   maxEntriesLocalHeap="1000"
+           overflowToDisk="false"
+           eternal="false"
+           timeToIdleSeconds="6000"
+           timeToLiveSeconds="6000"
+           memoryStoreEvictionPolicy="LRU"
+           transactionalMode="off">
+           <!--  cluster
+      <terracotta/> -->
+    </defaultCache>
+    <!--  cluster
+ 		 <terracottaConfig url="localhost:9510"/>
+  -->
+</ehcache>

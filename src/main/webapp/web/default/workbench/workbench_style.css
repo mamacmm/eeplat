@@ -1,0 +1,147 @@
+#workbench_container {
+	position:relative;
+	width:expression(parentElement.clientWidth-10);
+	padding:0 0 5px 0;
+	margin:4px 0 0 5px;
+	z-index:1;
+	font-size:12px; 
+}
+
+
+#workbench_container  .gztmodel
+{
+	float:left;
+	margin:3px;
+	width:49%;
+	height:250px;
+	
+}
+#workbench_container .title {
+	position:relative;
+	width:100%;
+	height:33px;
+	z-index:2;
+	background-image: url(images/lhimgzt_07.gif);
+	background-repeat: no-repeat;
+	background-position: right top;
+}
+#workbench_container .icon
+{
+	background-image: url(images/lhimgzt_06.gif);
+	background-position: left top;
+	background-repeat: no-repeat;
+	z-index:3;
+	width:26px;
+	height:33px;
+	float:left;
+}
+#workbench_container .titcon
+{
+	float:left;
+	font-weight:bolder;
+	z-index:3;
+	margin:13px 2px 0 4px;
+}
+#workbench_container .gzmid
+{
+	position:relative;
+	width:100%;
+	overflow:hidden;
+	height:210px;
+	z-index:4;
+	background-image: url(images/lhimgzt_11.gif);
+	background-repeat: repeat-y;
+	background-position: right top;
+}
+#workbench_container .midleft
+{
+	background-image: url(images/lhimgzt_10.gif);
+	background-position: left top;
+	background-repeat: repeat-y;
+	z-index:4;
+	width:26px;
+	height:210px;
+	float:left;
+}
+#workbench_container .gztfoot
+{
+	position:relative;
+	width:100%;
+	height:14px;
+	z-index:4;
+	background-image: url(images/lhimgzt_19.gif);
+	background-repeat:  both;
+	background-position: right top;
+}
+#workbench_container .footleft
+{
+	background-image: url(images/lhimgzt_18.gif);
+	background-position: left top;
+	background-repeat:  no-repeat;
+	z-index:4;
+	width:26px;
+	height:14px;
+	float:left;
+}
+#workbench_container .midcon
+{
+	overflow:hidden;
+	height:96%;
+	margin:5px 0 0 2px;
+	border:0px solid #000;
+	white-space:normal; 
+	word-break:break-all;
+	z-index:5;
+	scrollbar-face-color:#ffffff;
+	scrollbar-highlight-color:#FFFFFF;
+	scrollbar-3dlight-color:#ffffff;
+	scrollbar-darkshadow-color:#ffffff;
+	scrollbar-Shadow-color:#FFFFFF;
+	scrollbar-arrow-color:#ABD8FF;
+	scrollbar-track-color:#ffffff;
+}
+
+
+
+#workbench_container  .gztleft
+{
+
+	float:left;
+	margin:2px;
+	width:24%;
+	height:250px;
+	
+}
+
+#workbench_container  .gztright
+{
+	float:right;
+	margin:2px;
+	margin-right:7px;
+	width:25%;
+	height:250px;
+	
+}
+
+
+
+#workbench_container .gtzbar {
+	height: 500px;
+}
+
+#workbench_container .gtzbar .gzmid{
+	height: 465px;
+}
+
+#workbench_container .gtzbar .midleft{
+	height: 465px;
+}
+
+#workbench_container ul{
+	
+	margin:16px;
+	padding:0px;
+	align:left;
+	text-align:left;
+	
+}

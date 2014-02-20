@@ -1,0 +1,7 @@
+<config>
+		<property name="serverName">127.0.0.1</property>
+		
+		<property name="port">8899</property>
+		
+		<property name="cmdSvrBlockMax">10</property>
+</config>

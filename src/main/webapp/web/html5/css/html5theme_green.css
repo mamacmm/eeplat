@@ -1,0 +1,115 @@
+/************************************************************************************************/
+.width(@px:100%){
+	width:@px;
+}
+.height(@px:100%){
+	height:@px;
+}
+.margin(@px:0px){
+	margin:@px;
+}
+.padding(@px:0px){
+	padding:@px;
+}
+.bgcolor(@color:#ffffff){
+	background-color:@color;
+}
+.color(@color:#ffffff){
+	color:@color;
+}
+.gradient(@colorStart:#ececec,@colorEnd:#ababab){
+	background-image: -webkit-gradient(linear, left top, left bottom, from( @colorStart ), to( @colorEnd )); /* Saf4+, Chrome */
+	background-image: -webkit-linear-gradient( @colorStart , @colorEnd ); /* Chrome 10+, Saf5.1+ */
+	background-image:    -moz-linear-gradient( @colorStart , @colorEnd ); /* FF3.6 */
+	background-image:     -ms-linear-gradient( @colorStart , @colorEnd ); /* IE10 */
+	background-image:      -o-linear-gradient( @colorStart , @colorEnd ); /* Opera 11.10+ */
+	background-image:         linear-gradient( @colorStart , @colorEnd );
+}
+.boxShadow(@h-shadow:0px, @v-shadow:1px, @blur:3px, @spread:0px, @color:rgba(0,0,0,.8),@ins:0){
+	-moz-box-shadow: @h-shadow @v-shadow @blur @spread @color;
+	-webkit-box-shadow: @h-shadow @v-shadow @blur @spread @color;
+	box-shadow: @h-shadow @v-shadow @blur @spread @color; 
+}
+.border(@px:1px,@s:solid,@c:#000000){
+	border:@px @s @c;
+}
+.overflow(@type:auto){
+	overflow:@type;
+}
+.radius(@px:5px){
+	border-radius:@px;
+}
+.display(@ds:inline-block){
+	display:@ds;
+}
+/************************************************************************************************/
+.html5-page{
+	.html5-header-theme{
+		background-image:url(../img/theme/green/header_footer_bg.png);
+		.bgcolor(rgb(154,193,71));
+	}
+	.html5-footer-theme{
+		background-image:url(../img/theme/green/header_footer_bg.png);
+		.bgcolor(rgb(154,193,71));
+	}
+}
+.html5-menulist-item-icon{
+	.radius;
+}
+.html5-menulist-item-icon-activity{
+	background-image:url(../img/theme/green/green2_activity_icon.png);
+}
+.html5-menulist-item-icon-acttest{
+	background-image:url(../img/theme/green/green2_acttest_icon.png);
+}
+.html5-menulist-item-icon-album{
+	background-image:url(../img/theme/green/green2_album_icon.png);
+}
+.html5-menulist-item-icon-attence{
+	background-image:url(../img/theme/green/green2_attence_icon.png);
+}
+.html5-menulist-item-icon-babyinfo{
+	background-image:url(../img/theme/green/green2_babyinfo_icon.png);
+}
+.html5-menulist-item-icon-calendarevent{
+	background-image:url(../img/theme/green/green2_calendarevent_icon.png);
+}
+.html5-menulist-item-icon-downcenter{
+	background-image:url(../img/theme/green/green2_downcenter_icon.png);
+}
+.html5-menulist-item-icon-homework{
+	background-image:url(../img/theme/green/green2_homework_icon.png);
+}
+.html5-menulist-item-icon-info{
+	background-image:url(../img/theme/green/green2_info_icon.png);
+}
+.html5-menulist-item-icon-lesson{
+	background-image:url(../img/theme/green/green2_lesson_icon.png);
+}
+.html5-menulist-item-icon-menu{
+	background-image:url(../img/theme/green/green2_menu_icon.png);
+}
+.html5-menulist-item-icon-msg{
+	background-image:url(../img/theme/green/green2_msg_icon.png);
+}
+.html5-menulist-item-icon-observe{
+	background-image:url(../img/theme/green/green2_observe_icon.png);
+}
+.html5-menulist-item-icon-remind{
+	background-image:url(../img/theme/green/green2_remind_icon.png);
+}
+.html5-menulist-item-icon-report{
+	background-image:url(../img/theme/green/green2_report_icon.png);
+}
+.html5-menulist-item-icon-teachguide{
+	background-image:url(../img/theme/green/green2_teachguide_icon.png);
+}
+.html5-menulist-item-icon-timetable{
+	background-image:url(../img/theme/green/green2_timetable_icon.png);
+}
+.html5-menulist-item-icon-weekreport{
+	background-image:url(../img/theme/green/green2_weekreport_icon.png);
+}
+.html5-menulist-item-icon-notice{
+	background-image:url(../img/theme/green/green2_notice_icon.png);
+}

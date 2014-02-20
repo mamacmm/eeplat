@@ -1,0 +1,122 @@
+/**old --G:/DiggHeader**/
+* { margin: 0; padding: 0; }
+
+
+ul { list-style: none inside; }
+a img { border: none; }
+
+.floatleft { float: left; }
+.floatright { float: right; }
+.clear { clear: both; }
+
+
+#top-bar {
+	background: #1b5790; /* #1b5790 Digg Blue */
+	min-height: 55px;
+	padding: 0 10px;
+	font: 62.5% Arial, Helvetica, sans-serif;
+	font-size: 1.3em;
+	font-weight: bold;
+	}
+	#right-side {
+		float: right;
+		padding-top: 15px;
+		}
+		#right-side img {
+			border: 1px solid white;
+			vertical-align: middle;
+		}
+		#right-side a {
+			font: 80% Arial, Helvetica, sans-serif;
+			font-weight: bold;
+			color: white;/*color: #1b5790; */
+			text-decoration: none;
+			border-left: 1px solid white;/*color: #1b5790; */
+			height: 10px;
+			padding-left: 10px;
+			}
+			#right-side a.first {
+				border: none;
+				padding: 0;
+			}
+			form#main-search {
+				display: inline;
+				position: relative;
+				padding-right: 10px;
+				}
+				form#main-search label {
+					display: none;
+				}
+				#search-button {
+					position: absolute;
+					right: 0px;
+					top: -6px;
+				}
+				
+#zone-bar {
+	font:  Arial, Helvetica, sans-serif;
+	background: #b2d281;
+	min-height: 30px;
+	padding: 5px 10px 0 10px;
+	}
+	#zone-bar ul {
+		display: block;
+		}
+		#zone-bar ul li {
+			height: 18px;
+			padding: 5px 5px 0 5px;
+			position: relative;
+			float: left;
+			margin-right: 10px;
+			}
+			#zone-bar ul li:hover {
+				background: url(images/zonebar-navleft.png) center left no-repeat;
+			}
+			#zone-bar ul li a {
+				display: block;
+				float: left;
+				height: 23px;
+				position: relative;
+				top: -5px;
+				right: -5px;
+				padding-right: 3px;
+				color: #383838;
+				font-weight: bold;
+				font-size: 1.1em;
+				text-decoration: none;
+				}
+				#zone-bar ul li a:hover {
+					/*background: url(images/zonebar-navright.png) center right no-repeat;*/
+				}
+				#zone-bar ul li a span {
+					position: relative;
+					top: 6px;
+				}
+			#zone-bar ul li ul {
+				display: none;
+				position: absolute;
+				top: 29px;
+				left: 0px;
+				width: 150px;
+				border: 1px solid #ccc;
+				background: white;
+				padding: 10px 0 0 0;
+				}
+				#zone-bar ul li ul li {
+					float: none;
+					padding: 0; margin: 0;
+					height: 100%;
+				}
+				#zone-bar ul li ul li:hover {
+					background: none;
+					}
+					#zone-bar ul li ul li a {
+						display: block;
+						float: none;
+						margin-left: -5px;
+						padding: 5px 0 0 10px;
+						width: 140px;
+					}
+					#zone-bar ul li ul li a:hover {
+						background: #d9f0b7;
+					}

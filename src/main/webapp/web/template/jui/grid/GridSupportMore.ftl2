@@ -1,0 +1,46 @@
+<#--定义dataBinding-->
+<#assign dataBind = "com.exedosoft.plat.template.BindData2FormModel"?new()> 
+<#assign i18n = "com.exedosoft.plat.template.TPLI18n"?new()> 
+<div class="pageContent">
+<form  method='post' id='a${model.objUid}' name ='a${model.objUid}'>
+
+	<div class="pageFormContent" layoutH="56">
+			<#if (model.normalGridFormLinks?size > 0)>
+			
+			<#list model.normalGridFormLinks as item>
+			<dl>
+				<#assign htmlValue  = ''/>
+				
+				<#if dataBind(data,item) ==''> 
+					<#assign htmlValue  = item.htmlValue/> 
+				</#if>
+				<#if (item.nameColspan?exists && item.nameColspan == 0) >
+  					<dt/><dd> ${htmlValue}</dd>
+				<#else>                                                 
+				    <dt> ${item.l10n}</dt>
+				    <dd>${htmlValue}</dd>
+			     </#if>     
+			  </dl> 
+			</#list>
+			</#if>
+	</div>
+
+	<div class="formBar">
+		<ul>
+			<#--下面是按钮部分-->
+				<#if  (model.bottomOutGridFormLinks?size > 0)>
+					<#list model.bottomOutGridFormLinks as item> 
+				          <#if '${dataBind(data,item)}' ==''>
+					          <li> 
+					          	<div class="buttonActive">
+					          	<div class="buttonContent">
+					          		${item.htmlValue} 
+					          	</div>
+					          	</div>
+					          </li> 
+				          </#if>
+					</#list>
+				</#if> 	
+		</ul>
+	</div>
+</div>

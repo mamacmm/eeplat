@@ -1,0 +1,56 @@
+/*
+ * 下拉区域
+ */
+.combox_dropDownDiv {
+    font-family: "Arial";
+    font-size: 14px;
+    border: 1px solid #7EABCD;
+    margin: 0px;
+}
+
+/*
+ *  相关鼠标/键盘操作悬浮行
+ */
+.combox_hover {
+    background: #3559ac;
+    color: #fff;
+    cursor: pointer;
+    padding: 2px;
+}
+
+/*
+ * 标准行
+ */
+.combox_normal {
+    background: #fff;
+    color: #000;
+    cursor: pointer;
+    padding: 2px;
+}
+
+/*
+ * 筛选结果
+ */
+.combox_filter {
+    background: #a5beda;
+    cursor: pointer;
+}
+
+/*
+ * 选中行
+ */
+.combox_selected_row {
+    color: red;
+    font-style: italic;
+    padding: 2px;
+}
+
+/*
+ * 文本框旁边的点击下拉按钮
+ */
+.combox_dropDownBtn {
+    font-family: "Arial";
+    font-size: 10px;
+    margin: 0px;
+    padding: 0px;
+}

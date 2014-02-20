@@ -1,0 +1,4 @@
+--js--
+bootstrap.min.js	v3.0.2
+my.js
+jquery-1.10.2.min.js

@@ -1,0 +1,7 @@
+<!-- 多租户环境下 ，多租户集中数据指向的数据源-->
+<config>
+        <property name="connection.driver_class">org.postgresql.Driver</property>
+        <property name="connection.url">jdbc:postgresql://localhost/multi_tenancy</property>
+        <property name="connection.username">eeplat</property>
+        <property name="connection.password">eeplat123</property>            
+</config>

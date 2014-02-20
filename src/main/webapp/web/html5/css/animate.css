@@ -1,0 +1,32 @@
+@keyframes animated_imgload
+{
+	0%		{transform: rotate(0deg);}
+	100%	{transform: rotate(360deg);}
+}
+	
+@-webkit-keyframes animated_imgload
+{
+	0%		{-webkit-transform: rotate(0deg);}
+	100%	{-webkit-transform: rotate(360deg);}
+}
+
+@-moz-keyframes animated_imgload
+{
+	0%   {-moz-transform: rotate(0deg);}
+	100% {-moz-transform: rotate(360deg);}
+}
+
+@-o-keyframes animated_imgload
+{
+	0%   {transform: rotate(0deg);}
+	100% {transform: rotate(360deg);}
+}
+
+/********************************************************************************/
+.html5-imgload
+{
+	animation:animated_imgload 800ms linear infinite;
+	-moz-animation:animated_imgload 800ms linear infinite;
+	-webkit-animation:animated_imgload 800ms linear infinite;
+	-o-animation:animated_imgload 800ms linear infinite;
+}

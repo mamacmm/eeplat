@@ -1,0 +1,59 @@
+/************************************************************************************************/
+.width(@px:100%){
+	width:@px;
+}
+.height(@px:100%){
+	height:@px;
+}
+.margin(@px:0px){
+	margin:@px;
+}
+.padding(@px:0px){
+	padding:@px;
+}
+.bgcolor(@color:#ffffff){
+	background-color:@color;
+}
+.color(@color:#ffffff){
+	color:@color;
+}
+.gradient(@colorStart:#ececec,@colorEnd:#ababab){
+	background-image: -webkit-gradient(linear, left top, left bottom, from( @colorStart ), to( @colorEnd )); /* Saf4+, Chrome */
+	background-image: -webkit-linear-gradient( @colorStart , @colorEnd ); /* Chrome 10+, Saf5.1+ */
+	background-image:    -moz-linear-gradient( @colorStart , @colorEnd ); /* FF3.6 */
+	background-image:     -ms-linear-gradient( @colorStart , @colorEnd ); /* IE10 */
+	background-image:      -o-linear-gradient( @colorStart , @colorEnd ); /* Opera 11.10+ */
+	background-image:         linear-gradient( @colorStart , @colorEnd );
+}
+.boxShadow(@h-shadow:0px, @v-shadow:1px, @blur:3px, @spread:0px, @color:rgba(0,0,0,.8),@ins:0){
+	-moz-box-shadow: @h-shadow @v-shadow @blur @spread @color;
+	-webkit-box-shadow: @h-shadow @v-shadow @blur @spread @color;
+	box-shadow: @h-shadow @v-shadow @blur @spread @color; 
+}
+.border(@px:1px,@s:solid,@c:#000000){
+	border:@px @s @c;
+}
+.overflow(@type:auto){
+	overflow:@type;
+}
+.radius(@px:5px){
+	border-radius:@px;
+}
+.display(@ds:inline-block){
+	display:@ds;
+}
+/************************************************************************************************/
+.html5-page{
+	.html5-header-theme{
+		.gradient(#ececec,#cccccc);
+		.bgcolor(#ececec);
+		font-size:18px;
+		font-weight:bold;
+	}
+	.html5-footer-theme{
+		.gradient(#ececec,#cccccc);
+		.bgcolor(#ececec);
+		font-size:18px;
+		font-weight:bold;
+	}
+}

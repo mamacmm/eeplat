@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web.plugin>
+    <!--pc、tablet、mobile-->
+    <plugin.type>pc</plugin.type>
+    <!--  -->
+    <target.default>page-content</target.default>
+	<controllers>
+	<!-- 把系统默认的控制器对应为插件体系下的控制器 -->
+
+		<controller name="com.exedosoft.plat.ui.jquery.pane.LayOutHeader">com.exedosoft.plat.ui.jquery.pane.simplelayout.Header</controller>
+		<controller name="com.exedosoft.plat.ui.jquery.pane.LayOutSplitPane">com.exedosoft.plat.ui.jquery.pane.simplelayout.Content</controller>
+	
+		<controller name="com.exedosoft.plat.ui.jquery.menu.JqueryMenuXP">com.exedosoft.plat.ui.jquery.menu.HorizontalMenu</controller>
+		<controller name="com.exedosoft.plat.ui.jquery.menu.MainMenu">com.exedosoft.plat.ui.jquery.menu.HorizontalMenu</controller>
+		
+		
+	</controllers>
+</web.plugin>

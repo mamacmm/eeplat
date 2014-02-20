@@ -1,0 +1,179 @@
+ <config>
+		<property name="application">eeplat</property>
+		<property name="webmodule">eeplat</property>
+		<property name="transaction.isolation">2</property>
+		<property name="lang.local">cn</property>
+		
+		<property name="pml.suffix">.do</property>
+		<property name="log.db">false</property>
+
+	<!--local sae mopass jae cee  bae-->
+		<property name="cloud.env">local</property>
+
+		<property name="letter.case.keep">true</property>
+		
+        
+ 		<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="connection.url">jdbc:mysql://127.0.0.1:3306/taobao_model?useUnicode=true&amp;characterEncoding=utf-8</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password"></property>  
+       
+       <!--
+         <property name="connection.driver_class">org.postgresql.Driver</property>
+		<property name="connection.url">jdbc:postgresql://ec2-107-22-170-5.compute-1.amazonaws.com/d14reah9ua1ra7?ssl=true&amp;sslfactory=org.postgresql.ssl.NonValidatingFactory</property> 
+        <property name="connection.username">a</property>
+        <property name="connection.password">a</property>
+ 
+
+         <property name="connection.driver_class">org.h2.Driver</property>
+		<property name="connection.url">config;MVCC=TRUE</property> 
+        <property name="connection.username">sa</property>
+        <property name="connection.password"></property>
+        <property name="connection.otherparas">nioMapped:</property>
+        
+         <property name="connection.driver_class">org.h2.Driver</property>
+		<property name="connection.url">jdbc:h2:tcp://localhost/conf_archive;MVCC=TRUE</property> 
+        <property name="connection.username">sa</property>
+        <property name="connection.password"></property>
+       
+
+           
+        <property name="connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
+		<property name="connection.url">jdbc:oracle:thin:@127.0.0.1:1521:xe</property>
+        <property name="connection.username">eeplat</property>
+        <property name="connection.password">eeplat</property>
+        
+        
+ 		<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="connection.url">jdbc:mysql://127.0.0.1:3306/cloud_model?useUnicode=true&amp;characterEncoding=utf-8</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password"></property>  
+
+	  <property name="connection.driver_class">com.mysql.jdbc.Driver</property> 
+	  <property name="connection.url">jdbc:mysql://w.rdc.sae.sina.com.cn:3307/app_eeplat?useUnicode=true&amp;characterEncoding=utf-8</property> 
+	  <property name="connection.username">c</property> 
+	  <property name="connection.password">c</property> 
+
+        
+       	<property name="connection.driver_class">org.h2.Driver</property>
+		<property name="connection.url">jdbc:h2:nioMapped:d:/db/config</property> 
+        <property name="connection.username">sa</property>
+        <property name="connection.password"></property>
+       
+       	<property name="connection.driver_class">org.hsqldb.jdbcDriver</property>
+		<property name="connection.url">mydb</property>
+        <property name="connection.username">sa</property>
+        <property name="connection.password">1111</property>
+
+    
+		<property name="connection.driver_class">net.sourceforge.jtds.jdbc.Driver</property>
+        <property name="connection.url">jdbc:jtds:sqlserver://127.0.0.1:1433/conf_archive</property>
+        <property name="connection.username">test</property>
+        <property name="connection.password">test</property>
+			--> 
+		<!--Servlet 初始化类  quatzt 需要支持集群  -->
+		<property name="servlet.init.class"></property>
+		<!-- 权限相关class -->
+	    <property name="sessionparter.class">com.exedosoft.plat.SessionParterDefault</property>
+	    <!-- auth do_org_user_findbynameandpwd  -->
+	    <property name="webservice.login.service">eeplat_user_shareid_ws</property>
+	    
+	    <!-- MD5 base64 空 -->
+	    <property name="webservice.login.pwd.encode"></property>
+	    
+
+	    <property name="webservice.auth.service">exists_rest</property>
+	    
+	    <property name="data.access.finddept.service">do_org_dept_findbyuseruid</property>
+	    <property name="data.access.finddept.column">dept_code</property>
+	    
+	    
+	    <!-- 自定义查询的class 
+   	    <property name="plat.search.class">com.exedosoft.plat.search.customize.SearchTransCode</property>
+   	    <property name="aop.menumodel.class"></property>
+
+	    <property name="aop.panemodel.class"></property>
+	    AOP一定要禁掉,如果永远返回false, 则不走权限表，有条件的返回true，并且和权限表结合才有意义
+	    <property name="aop.formmodel.class">com.exedosoft.plat.FAOP</property>
+
+	    <property name="aop.parameter.check.class"></property>
+		-->
+		
+	    <property name="md5">1</property>
+	    
+	    <property name="model.uuid">true</property>
+
+	    <property name="multi.project">true</property>
+	    
+	    <!-- 是否采用JDK自带的rhino引擎，模式是extend不采用，采用EEPlat扩展的 -->
+	    <property name="rhino.jdk">true</property>
+	    <!-- 启用rhinojs 执行最快模式（全编译） -->
+	    <property name="rhino.fastest">false</property>
+	
+	<!-- 
+	 supported 2 ui framework: jquery and jquery.bootstrap default jquery.
+	 -->
+	 
+		
+ <!-- 
+ 		<property name="jslib">jquery.bootstrap</property>
+		<property name="jslib.jsp">exeboot.jsp</property>
+		<property name="jslib.template.path">bootstrap</property>
+	 -->
+	<!-- 
+		<property name="jslib.jsp">exetzx.jsp</property>
+		<property name="jslib.template.path">tzx</property> 
+ -->
+			    
+
+		<!-- 两种:serial no -->
+		<property name="useSerial">serial</property>
+
+		<property name="uploadfiletemp">d:/upload/</property>
+<!-- 		<property name="logoff.url">clubnew_portal.pml?isApp=true</property>  -->
+<!--!!!!!!!!!!!!!!!!!!!!!!!!! 多租户，沙箱相关 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->		
+<!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+<!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+		<property name="multi.tenancy">false</property>
+		
+		<!-- sandbox 总开关,true为开启;default:false -->
+		<property name="sandbox.global">false</property>
+		
+		<!-- 代码执行的时间限制, 0表示没有限制 ；default:10s-->
+		<property name="sandbox.rhino.overtime">10</property>
+		
+		<!-- 是否启用java扩展 ；default:false-->
+		<property name="sandbox.extend.java">false</property>
+		
+		
+		<!-- SQL执行的时间限制, 0表示没有限制 ;defualt:60s-->
+		<property name="sandbox.sql.overtime">60</property>
+		
+		<!-- 是否运行反射；default:false 不允许  -->
+		<property name="sandbox.class.reflection">false</property>		
+		
+		
+		<!-- 是否启用JRE类白名单过滤, default: true 过滤 -->
+		<property name="sandbox.class.whitelist">true</property>		
+		
+		<!-- 是否启用方法黑名单过滤; default: false不过滤 -->
+		<property name="sandbox.method.blacklist">false</property>
+		
+		<!-- rmi.rhino -->
+		<property name="rmi.rhino.uri">rmi://localhost:1099/js</property>		
+		
+		<!-- 数据库管理
+				<property name="dbmanager.language">zh_CN</property>
+		 -->
+		<!-- 配置库使用mysql，需要方言支持   -->
+
+	   	<property name="useDialect">dialect_mysql.properties</property>
+
+	   	<property name="export.app.format">sql</property>
+	   	
+	   	<property name="eeplatshare">http://cn.eeplat.com/eeplatshare/</property>
+	   	
+</config>

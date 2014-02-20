@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web.plugin>
+    <!--pc、tablet、mobile-->
+    <plugin.type>mobile</plugin.type>
+	<controllers>
+	<!-- 把系统默认的控制器对应为插件体系下的控制器 -->
+		<controller name="com.exedosoft.plat.ui.jquery.menu.JqueryMenuXP">com.exedosoft.plat.ui.mobile.menu.JqueryMenu</controller>
+		<controller name="com.exedosoft.plat.ui.jquery.menu.MainMenu">com.exedosoft.plat.ui.mobile.menu.JqueryMenu</controller>
+    	<controller name="com.exedosoft.plat.ui.jquery.menu.MainMenuTree">com.exedosoft.plat.ui.mobile.menu.JqueryMenu</controller>
+
+		<controller name="com.exedosoft.plat.ui.jquery.pane.ContentPane">com.exedosoft.plat.ui.mobile.pane.PagePaneWithHeader</controller>
+		<controller name="com.exedosoft.plat.ui.jquery.pane.ContentPaneScroll">com.exedosoft.plat.ui.mobile.pane.PagePaneWithHeader</controller>
+		<controller name="com.exedosoft.plat.ui.jquery.pane.Toolbar">com.exedosoft.plat.ui.mobile.pane.PagePaneWithHeader</controller>
+		<controller name="com.exedosoft.plat.ui.jquery.pane.ToolbarScroll">com.exedosoft.plat.ui.mobile.pane.PagePaneWithHeader</controller>
+		<controller name="com.exedosoft.plat.ui.jquery.pane.Tab">com.exedosoft.plat.ui.mobile.pane.PagePaneWithHeader</controller>
+
+
+		<controller name="com.exedosoft.plat.ui.jquery.grid.GridList">com.exedosoft.plat.ui.mobile.grid.GridList</controller>
+		<controller name="com.exedosoft.plat.ui.jquery.grid.GridCondition">com.exedosoft.plat.ui.mobile.grid.GridDetail</controller>
+		<controller name="com.exedosoft.plat.ui.jquery.grid.GridConditionAutoTr">com.exedosoft.plat.ui.mobile.grid.GridDetail</controller>
+		<controller name="com.exedosoft.plat.ui.jquery.grid.GridSupportMore">com.exedosoft.plat.ui.mobile.grid.GridDetail</controller>
+
+		
+		<controller name="com.exedosoft.plat.ui.jquery.form.DOResultListPopup">com.exedosoft.plat.ui.jquery.form.DOResultList</controller>
+		<controller name="com.exedosoft.plat.ui.jquery.form.DOResultListPopupNoSplitPage">com.exedosoft.plat.ui.jquery.form.DOResultList</controller>
+		<controller name="com.exedosoft.plat.ui.jquery.form.DOResultListPopupNoSplitPageNoDefault">com.exedosoft.plat.ui.jquery.form.DOResultList</controller>
+		<controller name="com.exedosoft.plat.ui.jquery.form.DOResultListPopupAll">com.exedosoft.plat.ui.jquery.form.DOResultList</controller>
+		<controller name="com.exedosoft.plat.ui.jquery.form.DOResultListPopupPml">com.exedosoft.plat.ui.jquery.form.DOResultList</controller>
+		<controller name="com.exedosoft.plat.ui.jquery.form.DOStaticListPopup">com.exedosoft.plat.ui.jquery.form.DOStaticList</controller>
+		<controller name="com.exedosoft.plat.ui.jquery.form.DOInputRadio">com.exedosoft.plat.ui.mobile.form.DOInputRadio</controller>
+		<controller name="com.exedosoft.plat.ui.jquery.form.DOInputCheckBoxList">com.exedosoft.plat.ui.mobile.form.DOInputCheckBoxList</controller>
+		<controller name="com.exedosoft.plat.ui.jquery.form.my97.DatePicker">com.exedosoft.plat.ui.mobile.form.DOInputDate</controller>
+		<controller name="com.exedosoft.plat.ui.jquery.form.DOResultListPopupReadOnly">com.exedosoft.plat.ui.jquery.form.DOResultList</controller>
+		<controller name="com.exedosoft.plat.ui.jquery.form.DOResultListPopupNoSplitPageNoDefault">com.exedosoft.plat.ui.jquery.form.DOResultList</controller>
+		<controller name="com.exedosoft.plat.ui.jquery.form.TSuite">com.exedosoft.plat.ui.mobile.form.MSuite</controller>
+		<controller name="com.exedosoft.plat.ui.jquery.form.DOFCKEditor">com.exedosoft.plat.ui.jquery.form.DOTextArea</controller>
+		<controller name="com.exedosoft.plat.ui.jquery.form.TKindEditor">com.exedosoft.plat.ui.jquery.form.DOTextArea</controller>
+		<controller name="com.exedosoft.plat.ui.jquery.form.TKindEditorView">com.exedosoft.plat.ui.jquery.form.DOTextArea</controller>
+		<controller name="com.exedosoft.plat.ui.customize.ace.JS">com.exedosoft.plat.ui.jquery.form.DOTextArea</controller>
+		<controller name="com.exedosoft.plat.ui.customize.ace.HTML">com.exedosoft.plat.ui.jquery.form.DOTextArea</controller>
+		<controller name="com.exedosoft.plat.ui.customize.ace.RHINO">com.exedosoft.plat.ui.jquery.form.DOTextArea</controller>
+		<controller name="com.exedosoft.plat.ui.customize.ace.CSS">com.exedosoft.plat.ui.jquery.form.DOTextArea</controller>
+		
+	</controllers>
+</web.plugin>

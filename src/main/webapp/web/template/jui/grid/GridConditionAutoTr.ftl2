@@ -1,0 +1,31 @@
+<#--开始输出空行-->
+
+<div class="pageHeader">
+<form  method='post' id='a${model.objUid}' name ='a${model.objUid}'>
+	<div class="searchBar">
+<table class="searchContent">
+	<tr>
+	<#list model.normalGridFormLinks as item> 
+		<#if  item.newLine>
+			</tr>
+			<tr>
+		 </#if>
+		      <td>   ${item.l10n}    ${item.htmlValue} &nbsp; </td>
+			</#list>
+			
+	</tr>
+</table>
+<div class="subBar">
+	<ul>
+		<#list model.allOutGridFormLinks as item> 
+				 <#if  item.newLine>
+			</tr></td>
+			<tr><td>
+				 </#if>
+		          ${item.htmlValue} &nbsp; 
+			</#list>
+	</ul>
+</div>
+</div>
+</form>
+</div>

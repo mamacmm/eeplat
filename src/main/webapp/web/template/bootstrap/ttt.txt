@@ -1,0 +1,10 @@
+	<div class="row-fluid">	
+		<div class="btn-group"> 
+		<#if (model.topOutGridFormLinks?size > 0) > 
+		
+								<#list model.topOutGridFormLinks as item>
+										${item.htmlValue}
+								</#list>
+		</#if>
+	    </div>
+	</div> 

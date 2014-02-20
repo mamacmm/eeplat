@@ -1,0 +1,176 @@
+@CHARSET "UTF-8";
+
+		.page-content{
+			padding: 8px;
+		}
+		.ui-tabs .ui-tabs-panel {
+			padding: 8px;
+		}
+		.row-fluid [class*="span"]{
+			margin-left:0px;
+		}
+ 		.login-layout{
+ 		  	background: white;
+ 		}
+ 		.login-container{
+ 			width: 420px;
+ 		}
+ 		.login-layout .widget-box{
+ 			padding:2px;
+ 		}
+ 		.login-layout .widget-box .widget-main {
+			padding: 16px  36px ;
+ 		}
+		.navbar .navbar-inner {
+		  border: none;
+		  border-bottom: 2px solid #438eb9;
+		  -webkit-box-shadow: none;
+		  -moz-box-shadow: none;
+		  box-shadow: none;
+		  -webkit-border-radius: 0;
+		  -moz-border-radius: 0;
+		  border-radius: 0;
+		  margin: 0;
+		  padding-left: 0;
+		  padding-right: 0;
+		  min-height: 45px;
+		  position: relative;
+		  background: white;
+	/*	  background-image:url(img/title_bg.jpg); */
+		}
+		.navbar .brand {
+			  padding: 0px;
+			  margin-left:2px
+		}
+		.btn-group > .btn{
+		   font-style: normal;
+		}
+		.popupimg,.popupimg1,.popupimg2 {
+			CURSOR: pointer;
+		}
+		input[type="checkbox"], input[type="radio"]{
+			opacity: 1;
+		}
+		form{
+			margin:0;
+		}
+	    .tdkey{	
+		 	background-color: #EDF3F4;
+	    }
+	    
+	    .table{
+			margin-bottom: 0;
+	    }
+		.table td{
+			padding: 5px;
+			vertical-align: middle;
+			text-vertical-align:middle;
+		}
+		.table select,.table input,.table textarea,.table .uneditable-input{
+			padding: 4px;
+			margin:0; 
+		}
+		.table .input-append{
+			padding: 0px;
+			margin:0; 
+		}
+		.table  tr.selected td{
+		    background-color:yellow;
+		}
+		
+		.table.table-hover tbody tr.selected:hover td {
+		    background-color:yellow;
+		}
+		.table-striped tbody>tr.selected td{
+		 	background-color:yellow;
+		}
+		
+		.breadcrumbs{
+			height: 38px
+		}
+		#myTab{
+			height: 38px;
+		}
+		.nav-tabs>li {
+		 	margin-bottom: 0px;
+		}
+		.nav-tabs>li a{
+			
+			height: 22px;
+		}
+		
+		.nav-tabs>li.active>a>i{
+			cursor:pointer;
+		}
+		
+
+/**
+*::nth-child(odd)>
+* custom combox
+*/	
+		
+	.custom-combobox {
+		position: relative;
+		display: inline-block;
+	}
+	.custom-combobox-toggle {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		margin-left: -1px;
+		padding: 0;
+		/* support: IE7 */
+		*height: 1.7em;
+		*top: 0.1em;
+	}
+	.custom-combobox-input {
+		margin: 0;
+		padding: 0.3em;
+	}
+	.ui-autocomplete{
+	  	max-height: 250px;
+		overflow:auto;
+	}
+	.mytree{
+		margin:-8px 0 0 -6px;
+		overflow-x:auto;
+		overflow-y:auto;
+		width:100%;
+	}
+	
+	.page-content .ui-tabs{
+		margin-top: -8px;
+	}
+	
+	.ui-tabs-nav{
+		max-height:35px;
+	}
+	
+		.myhtml5file { 
+		position:relative; 
+	} 
+	.myhtml5file input { 
+		font-size:16px; 
+		margin:0; 
+		padding:0; 
+		position:relative; 
+		vertical-align:middle; 
+		outline:none; 
+	} 
+	.myhtml5file input[type="text"] { 
+		width:172px; 
+		z-index:4; 
+	} 
+	.myhtml5file input[type="button"] { 
+		width:84px; 
+		height:25px; 
+		z-index:2; 
+	} 
+	.myhtml5file input[type="file"] { 
+		position:absolute; 
+		right:0px; 
+		height:25px; 
+		opacity:0; 
+		z-index:3; 
+	} 
+	
