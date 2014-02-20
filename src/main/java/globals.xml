@@ -1,6 +1,6 @@
  <config>
 		<property name="application">eeplat</property>
-		<property name="webmodule">eeplat</property>
+		<property name="webmodule">.</property>
 		<property name="transaction.isolation">2</property>
 		<property name="lang.local">cn</property>
 		
@@ -8,7 +8,7 @@
 		<property name="log.db">false</property>
 
 	<!--local sae mopass jae cee  bae-->
-		<property name="cloud.env">local</property>
+		<property name="cloud.env">jae</property>
 
 		<property name="letter.case.keep">true</property>
 		
