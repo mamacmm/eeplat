@@ -2,8 +2,6 @@ package com.exedosoft.plat.util.cloud;
 
 import com.exedosoft.plat.util.DOGlobals;
 
-
-
 public class CloudEnvFactory {
 
 	private static CloudEnvFactory anInstance = new CloudEnvFactory();
@@ -27,41 +25,40 @@ public class CloudEnvFactory {
 		 * 不加同步锁，不影响最终的结果
 		 */
 		try {
-			
-			Class.forName("com.sina.sae.util.SaeUserInfo");
 			if ("sae".equals(DOGlobals.getValue("cloud.env"))) {
 				cacheCloudEnv = new CloudEnvSAE();
 			}
-			if ("jae".equals(DOGlobals.getValue("cloud.env"))) {
+			else if ("jae".equals(DOGlobals.getValue("cloud.env"))) {
 				cacheCloudEnv = new CloudEnvJAE();
 			}
+			else if ("mopaas".equals(DOGlobals.getValue("cloud.env"))) {
+				cacheCloudEnv = new CloudEnvMoPaaS();
+			}
 
-		} catch (ClassNotFoundException e) {
+		} catch (Exception e) {
 
 		}
-		if(cacheCloudEnv==null){
+		if (cacheCloudEnv == null) {
 			cacheCloudEnv = new CloudEnvNormal();
 		}
 		return cacheCloudEnv;
 
 	}
-	
+
 	/**
 	 * 没有SAE的 jar包。
+	 * 
 	 * @return
 	 */
-//	public static CloudEnv getCloudEnv() {
-//
-//		if (cacheCloudEnv != null) {
-//			return cacheCloudEnv;
-//		}
-//	
-//		cacheCloudEnv = new CloudEnvNormal();
-//		return cacheCloudEnv;
-//
-//	}
-	
-	
-	
+	// public static CloudEnv getCloudEnv() {
+	//
+	// if (cacheCloudEnv != null) {
+	// return cacheCloudEnv;
+	// }
+	//
+	// cacheCloudEnv = new CloudEnvNormal();
+	// return cacheCloudEnv;
+	//
+	// }
 
 }

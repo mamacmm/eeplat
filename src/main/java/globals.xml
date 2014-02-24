@@ -1,5 +1,5 @@
  <config>
-		<property name="application">eeplat</property>
+		<property name="application">.</property>
 		<property name="webmodule">.</property>
 		<property name="transaction.isolation">2</property>
 		<property name="lang.local">cn</property>
